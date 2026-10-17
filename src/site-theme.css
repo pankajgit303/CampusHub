@@ -1,0 +1,468 @@
+/* CampusHub design system: shared with the public home page and role portals. */
+html:root {
+  --bg: #f4f8fa;
+  --panel: #fff;
+  --text: #103f50;
+  --muted: #61747b;
+  --border: #dce8eb;
+  --primary: #008d9f;
+  --soft: #eaf7f8;
+  --shadow: 0 5px 24px #103f5008;
+  color: var(--text);
+  background: var(--bg);
+}
+html.dark {
+  --bg: #13232c;
+  --panel: #192e38;
+  --text: #e2f1f4;
+  --muted: #adc2c9;
+  --border: #34515e;
+  --primary: #75d5e3;
+  --soft: #234854;
+  --shadow: none;
+}
+html body {
+  color: var(--text);
+  background: var(--bg);
+}
+html .logo-mark {
+  background: #008d9f;
+  box-shadow: none;
+}
+html .logo-light {
+  color: inherit;
+}
+html .logo small {
+  color: var(--muted);
+}
+html .sidebar {
+  background: #103f50;
+  color: #b7d1da;
+  border-right: 1px solid #ffffff12;
+}
+html .sidebar .logo small {
+  color: #a2c5cf;
+}
+html .sidebar .workspace-label {
+  background: #ffffff06;
+  border-color: #ffffff18;
+}
+html .workspace-avatar {
+  background: #ffffff12;
+  color: #a6e9f0;
+}
+html .workspace-label b {
+  color: #e2f3f7;
+}
+html .workspace-label small,
+html .sidebar .nav-section,
+html .sidebar-brand {
+  color: #a3c3cc;
+}
+html .sidebar nav a {
+  color: #b7d1da;
+  border-radius: 7px;
+}
+html .sidebar nav a:hover,
+html .sidebar-bottom > a:hover,
+html .sidebar-bottom > button:hover {
+  background: #ffffff0d;
+  color: #fff;
+}
+html .sidebar nav a.active {
+  background: #008d9f;
+  color: #fff;
+  box-shadow: none;
+}
+html .sidebar .ai-nav {
+  background: #ffffff09;
+  border: 1px solid #ffffff12;
+  color: #c2e8ee;
+}
+html .sidebar .new-tag {
+  background: #ffffff12;
+  color: #c2e8ee;
+}
+html .sidebar-bottom {
+  border-color: #ffffff14;
+}
+html .sidebar-bottom a,
+html .sidebar-bottom button {
+  color: #b7d1da;
+}
+html .sidebar .nav-dot {
+  background: #77cdd8;
+}
+html .topbar {
+  background: var(--panel);
+  border-color: var(--border);
+}
+html .workspace-content {
+  color: var(--text);
+}
+html .page-heading {
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 26px;
+}
+html .page-heading h1 {
+  font-size: clamp(25px, 2.2vw, 33px);
+  font-weight: 650;
+  letter-spacing: -1px;
+}
+html .eyebrow {
+  color: var(--primary);
+  letter-spacing: 1.6px;
+}
+html .page-heading p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+html .avatar {
+  background: var(--soft);
+  color: var(--primary);
+  border-color: var(--border);
+}
+html .workspace-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+html .btn {
+  border-radius: 7px;
+  transition:
+    background 0.18s,
+    transform 0.18s,
+    box-shadow 0.18s;
+}
+html .btn-primary {
+  background: #103f50;
+  color: #fff;
+  border-color: #103f50;
+  box-shadow: none;
+}
+html .btn-primary:hover {
+  background: #176074;
+  box-shadow: 0 6px 16px #103f5012;
+  transform: translateY(-1px);
+}
+html .btn-outline {
+  border-color: var(--border);
+  background: var(--panel);
+  color: var(--text);
+}
+html .btn-outline:hover {
+  background: var(--soft);
+  border-color: var(--primary);
+}
+html .btn:disabled {
+  transform: none;
+  box-shadow: none;
+}
+html .btn-white {
+  color: #103f50;
+  background: #fff;
+}
+html a:focus-visible,
+html button:focus-visible,
+html summary:focus-visible {
+  outline: 3px solid #d8a541;
+  outline-offset: 3px;
+}
+html input:not([type='checkbox']):not([type='radio']):focus,
+html select:focus,
+html textarea:focus {
+  border-color: var(--primary);
+  outline: 2px solid #008d9f22;
+  outline-offset: 1px;
+  box-shadow: none;
+}
+html input,
+html select,
+html textarea {
+  accent-color: var(--primary);
+}
+html .panel,
+html .stat-card,
+html .table-wrap,
+html .resource-card,
+html .event-card {
+  border-color: var(--border);
+  background: var(--panel);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+html .resource-toolbar {
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  gap: 12px;
+}
+html table th {
+  background: var(--soft);
+  color: var(--text);
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  font-weight: 650;
+}
+html table td {
+  border-color: var(--border);
+}
+html tbody tr:hover {
+  background: var(--soft);
+}
+html .dialog-content {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 24px 80px #103f5030;
+}
+html .dialog-overlay {
+  background: #0e253968;
+  backdrop-filter: blur(3px);
+}
+html .dialog-title {
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+html .record-form label {
+  color: var(--text);
+}
+html .empty > span {
+  background: var(--soft);
+  color: var(--primary);
+}
+html .empty h3 {
+  color: var(--text);
+}
+html .badge:not(.badge-red):not(.badge-green) {
+  background: var(--soft);
+  color: var(--primary);
+}
+html .color-0 {
+  background: #eaf7f8;
+  color: #008d9f;
+}
+html .day-column.today > header {
+  background: var(--soft);
+  color: var(--primary);
+}
+html .chat-message.user {
+  background: #103f50;
+  color: #fff;
+}
+html .ai-mark {
+  background: var(--soft);
+  color: var(--primary);
+}
+html .skeleton {
+  background: linear-gradient(90deg, #e2eef1, #f5fafb, #e2eef1);
+  background-size: 200% 100%;
+}
+html .auth-page {
+  background: var(--panel);
+  color: var(--text);
+}
+html .auth-story {
+  background: #103f50;
+  background-image: radial-gradient(ellipse at 15% 85%, #008d9f44, transparent 65%);
+  color: #fff;
+}
+html .auth-story h1 {
+  font-weight: 600;
+}
+html .auth-story h1 em,
+html .auth-icons {
+  color: #a6e9f0;
+}
+html .auth-story p {
+  color: #c0dae1;
+}
+html .auth-story > small {
+  color: #a2c5cf;
+}
+html .auth-story .logo small {
+  color: #b5d4dd;
+}
+html .auth-form h1 {
+  letter-spacing: -1px;
+  font-weight: 650;
+}
+html .login-role-tabs {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+html .login-role-tabs a[aria-current='page'] {
+  background: #103f50;
+  color: #fff;
+}
+html .auth-form > p {
+  color: var(--muted);
+}
+html .portal-entry {
+  background: var(--panel);
+  color: var(--text);
+}
+html .portal-brand {
+  background: #103f50;
+  background-image: radial-gradient(ellipse at 10% 90%, #008d9f44, transparent 58%);
+}
+html .portal-brand .logo-mark {
+  background: #008d9f;
+}
+html .portal-brand .logo small,
+html .portal-kicker,
+html .portal-brand-copy > p,
+html .portal-brand-footer,
+html .portal-caption {
+  color: #bddce4;
+}
+html .portal-brand h1 em,
+html .portal-spark,
+html .portal-brand-footer > span:last-child {
+  color: #a6e9f0;
+}
+html .portal-kicker > span {
+  background: #83dbb7;
+  box-shadow: 0 0 0 4px #83dbb715;
+}
+html .portal-orbit {
+  border-color: #b3e5ee40;
+}
+html .portal-center {
+  background: linear-gradient(145deg, #31899a66, #008d9f15);
+  color: #a6e9f0;
+  border-color: #b3e5ee35;
+}
+html .portal-satellite {
+  background: #235b6b;
+  color: #c5edf3;
+  border-color: #b3e5ee30;
+}
+html .portal-top a,
+html .portal-top > span,
+html .portal-intro,
+html .portal-choice-copy small,
+html .portal-selection footer {
+  color: var(--muted);
+}
+html .portal-welcome {
+  color: var(--primary);
+}
+html .portal-choice {
+  background: var(--panel);
+  border-color: var(--border);
+  border-radius: 10px;
+}
+html .portal-choice:hover {
+  border-color: var(--primary);
+  box-shadow: 0 10px 24px #103f500a;
+}
+html .portal-choice-icon,
+html .portal-faculty .portal-choice-icon,
+html .portal-admin .portal-choice-icon {
+  background: var(--soft);
+  color: var(--primary);
+}
+html .portal-choice-copy strong {
+  color: var(--text);
+}
+html .portal-choice-copy strong > span {
+  color: var(--primary);
+}
+html .portal-choice-arrow {
+  color: var(--primary);
+  background: var(--soft);
+}
+html .portal-register {
+  color: var(--muted);
+}
+html .portal-register a {
+  color: var(--primary);
+}
+html.dark .btn-primary {
+  background: #75d5e3;
+  color: #103f50;
+  border-color: #75d5e3;
+}
+html.dark .btn-primary:hover {
+  background: #9be2eb;
+}
+html.dark .color-0 {
+  background: #234854 !important;
+  color: #8bdde8;
+}
+html.dark .skeleton {
+  background: linear-gradient(90deg, #1c333e, #244450, #1c333e);
+  background-size: 200% 100%;
+}
+html.dark .portal-brand,
+html.dark .auth-story {
+  background-color: #103f50;
+}
+html.dark .day-column.today > header {
+  background: #234854;
+  color: #8bdde8;
+}
+html.dark .portal-options,
+html.dark .portal-selection {
+  color: var(--text);
+}
+html.dark .chat-message.user {
+  background: #235b6b;
+  color: #fff;
+}
+@media (max-width: 700px) {
+  html .page-heading {
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+  }
+  html .resource-toolbar {
+    padding: 12px;
+  }
+  html .portal-choice {
+    padding: 18px;
+  }
+  html .auth-form {
+    padding: 35px 24px;
+  }
+  html .page-heading h1 {
+    font-size: 26px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html .portal-subtitle,html .portal-description,html .portal-signup,html .portal-security,html .portal-security svg,html .portal-footer,html .card-description,html .card-meta{color:var(--muted)}
+html .portal-signup a,html .sidebar .ai-nav svg{color:var(--primary)}
+html .portal-signup,html .portal-choice-copy strong>span{border-color:var(--border)}
+html .card-icon{background:var(--soft);color:var(--primary)}
+html .meta-dot{background:var(--primary)}
+
+/* Shared portfolio credit across public, auth and role workspaces. */
+html .footer-credit {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+html .footer-credit a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+html .footer-credit a:hover { text-decoration-thickness: 2px; }
+html .footer-credit a:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; }
+html .auth-footer { margin-top: 24px; }

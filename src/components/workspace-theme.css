@@ -1,0 +1,438 @@
+/* Shared dashboard theme, aligned with the public CampusHub home page. */
+.unified-portal {
+  --sp-cyan: #008d9f;
+  --sp-navy: #103f50;
+  --sp-ink: #103f50;
+  --sp-border: #dce8eb;
+  --primary: #008d9f;
+  --soft: #eaf7f8;
+  --muted: #61747b;
+  --border: #dce8eb;
+  background: #fff;
+}
+.unified-portal .sp-toolbar {
+  background: #103f50;
+}
+.unified-portal .sp-toolbar > div,
+.unified-portal .sp-brand-inner,
+.unified-portal .sp-container {
+  max-width: 1210px;
+  width: calc(100% - 60px);
+}
+.unified-portal .sp-toolbar > div {
+  padding: 3px 0;
+}
+.unified-portal .sp-brand {
+  border-bottom: 1px solid #e0edee;
+  box-shadow: none;
+}
+.unified-portal .sp-brand-inner {
+  min-height: 104px;
+  align-items: center;
+}
+.unified-portal .sp-crest {
+  width: 49px;
+  height: 54px;
+  border-radius: 8px 8px 20px 20px;
+  background: #e6f6f8;
+  border-color: #c6e6ec;
+  color: #008d9f;
+}
+.unified-portal .sp-crest svg {
+  width: 32px;
+}
+.unified-portal .sp-identity h1 {
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+.unified-portal .sp-identity p {
+  font-size: 11px;
+  font-weight: 400;
+  color: #61747b;
+}
+.unified-portal .sp-student-label {
+  min-width: 0;
+  background: #eaf7f8;
+  color: #126375;
+  border: 1px solid #d4e9ed;
+  border-radius: 7px;
+  padding: 13px 18px;
+  flex-direction: row;
+  gap: 9px;
+}
+.unified-portal .sp-student-label strong {
+  font-size: 11px;
+  letter-spacing: 0.6px;
+}
+.unified-portal .sp-student-label > span {
+  display: none;
+}
+.unified-portal .sp-password {
+  background: #ffffff15;
+  color: #fff;
+  border: 1px solid #ffffff22;
+}
+.unified-portal .sp-logout {
+  background: #ffffff0c;
+  border: 1px solid #ffffff22;
+}
+.unified-portal .sp-welcome {
+  position: relative;
+  margin-top: 26px;
+  background: linear-gradient(110deg, #eff8f8, #dff1f3);
+  color: #103f50;
+  min-height: 195px;
+  border: 1px solid #d8e9ec;
+  border-radius: 12px;
+  padding: 35px 38px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+.unified-portal .sp-welcome:after {
+  content: '';
+  position: absolute;
+  right: -35px;
+  top: -70px;
+  width: 270px;
+  height: 270px;
+  border: 45px solid #008d9f07;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.unified-portal .sp-welcome > span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #008d9f;
+}
+.unified-portal .sp-welcome strong {
+  font-size: 32px;
+  letter-spacing: -1px;
+  text-transform: none;
+  line-height: 1.25;
+  position: relative;
+  z-index: 1;
+}
+.unified-portal .sp-welcome p {
+  font-size: 13px;
+  color: #61747b;
+  line-height: 1.8;
+  max-width: 650px;
+  position: relative;
+  z-index: 1;
+}
+.workspace-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 36px 0 22px;
+}
+.workspace-section-heading span {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #008d9f;
+  font-weight: 700;
+}
+.workspace-section-heading h2 {
+  font-size: 25px;
+  letter-spacing: -0.8px;
+  font-weight: 650;
+  margin-top: 8px;
+}
+.workspace-section-heading > p {
+  font-size: 11px;
+  color: #61747b;
+}
+.unified-portal .sp-services {
+  margin-top: 0;
+  border: none;
+  padding: 0;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 24px;
+  align-items: start;
+}
+.unified-portal .sp-tile-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  align-content: start;
+}
+.unified-portal .sp-tile-grid .sp-tile {
+  align-items: flex-start;
+  text-align: left;
+  border: 1px solid #dce8eb;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 17px;
+  min-height: 148px;
+  position: relative;
+  background: var(--panel, #fff);
+  font-size: 12px;
+  font-weight: 650;
+  transition:
+    transform 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+.unified-portal .sp-tile-grid .sp-tile:after {
+  content: '↗';
+  position: absolute;
+  right: 17px;
+  top: 20px;
+  font-size: 16px;
+  color: #8aa3aa;
+}
+.unified-portal .sp-tile-grid .sp-tile:hover {
+  transform: translateY(-4px);
+  border-color: #008d9f;
+  box-shadow: 0 12px 28px #103f500a;
+}
+.unified-portal .sp-tile-icon {
+  width: 45px;
+  height: 45px;
+  border: none;
+  box-shadow: none;
+  border-radius: 9px;
+  background: #eaf7f8;
+  color: #008d9f;
+  transition: background 0.2s;
+}
+.unified-portal .sp-tile-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.unified-portal .sp-tile:hover .sp-tile-icon {
+  transform: none;
+  box-shadow: none;
+  background: #d9f0f3;
+}
+.unified-portal .sp-tile > span:last-child {
+  max-width: none;
+}
+.unified-portal .sp-alert {
+  border: 1px solid #dce8eb;
+  background: #f7fafb;
+  color: #103f50;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 11px;
+}
+.unified-portal .sp-alert strong {
+  font-size: 13px;
+}
+.unified-portal .sp-alert p {
+  color: #61747b;
+  line-height: 1.85;
+  margin: 9px 0 12px;
+}
+.unified-portal .sp-alert a {
+  color: #008d9f;
+  font-size: 11px;
+  text-decoration: none;
+}
+.unified-portal .sp-sidebar {
+  gap: 16px;
+}
+.unified-portal .sp-alert-rose {
+  background: #103f50;
+  border-color: #103f50;
+  color: #fff;
+}
+.unified-portal .sp-alert-rose p {
+  color: #c1dae1;
+}
+.unified-portal .sp-alert-rose a {
+  color: #a5e5ed;
+}
+.unified-portal .sp-exam {
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #dce8eb;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 11px;
+}
+.unified-portal .sp-exam .sp-tile-icon {
+  background: #eaf7f8;
+  color: #008d9f;
+  flex-shrink: 0;
+}
+.unified-portal .sp-updates {
+  margin-top: 30px;
+  padding: 23px;
+  border-color: #dce8eb;
+  border-radius: 10px;
+}
+.unified-portal .sp-footer {
+  background: #103f50;
+  padding: 25px max(30px, calc((100vw - 1210px) / 2));
+  font-size: 10px;
+}
+.unified-portal .portal-insights {
+  margin-top: 38px;
+  padding-top: 28px;
+}
+.unified-portal .academic-dashboard {
+  --ad-accent: #008d9f;
+  --ad-soft: #eaf7f8;
+  --ad-deep: #103f50;
+}
+.unified-portal .ad-panel,
+.unified-portal .ad-metric,
+.unified-portal .admin-portal-insights .panel,
+.unified-portal .admin-portal-insights .stat-card {
+  border-color: #dce8eb;
+  border-radius: 10px;
+}
+.unified-portal .admin-portal-insights .ai-promo {
+  background: #103f50;
+}
+.dark .unified-portal {
+  --sp-ink: #e2f1f4;
+  --sp-navy: #bde5ed;
+  --sp-border: #34515e;
+  --border: #34515e;
+  --primary: #75d5e3;
+  --muted: #adc2c9;
+  --panel: #192e38;
+  background: #13232c;
+  color: #e2f1f4;
+}
+.dark .unified-portal .sp-brand {
+  border-color: #34515e;
+}
+.dark .unified-portal .sp-welcome {
+  background: linear-gradient(110deg, #193d49, #1c4955);
+  border-color: #34515e;
+  color: #e2f1f4;
+}
+.dark .unified-portal .sp-welcome > span,
+.dark .workspace-section-heading span {
+  color: #75d5e3;
+}
+.dark .unified-portal .sp-welcome p,
+.dark .workspace-section-heading > p,
+.dark .unified-portal .sp-identity p {
+  color: #adc2c9;
+}
+.dark .unified-portal .sp-tile-grid .sp-tile,
+.dark .unified-portal .sp-exam,
+.dark .unified-portal .sp-updates,
+.dark .unified-portal .ad-panel,
+.dark .unified-portal .ad-metric,
+.dark .unified-portal .admin-portal-insights .panel,
+.dark .unified-portal .admin-portal-insights .stat-card {
+  border-color: #34515e;
+}
+.dark .unified-portal .sp-tile-icon,
+.dark .unified-portal .sp-student-label,
+.dark .unified-portal .sp-exam .sp-tile-icon {
+  background: #234854;
+  color: #8bdde8;
+  border-color: #34515e;
+}
+.dark .unified-portal .sp-alert {
+  background: #192e38;
+  color: #e2f1f4;
+  border-color: #34515e;
+}
+.dark .unified-portal .sp-alert p {
+  color: #adc2c9;
+}
+.dark .unified-portal .sp-alert a {
+  color: #8bdde8;
+}
+.dark .unified-portal .academic-dashboard {
+  --ad-accent: #75d5e3;
+  --ad-soft: #234854;
+}
+.dark .unified-portal .sp-tile:hover > span:last-child {
+  color: #8bdde8;
+}
+@media (max-width: 1000px) {
+  .unified-portal .sp-services {
+    grid-template-columns: 1fr;
+  }
+  .unified-portal .sp-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .unified-portal .sp-tile-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .unified-portal .sp-tile-grid .sp-tile {
+    padding: 17px;
+    min-height: 140px;
+  }
+  .unified-portal .sp-student-label strong {
+    font-size: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .unified-portal .sp-toolbar > div,
+  .unified-portal .sp-brand-inner,
+  .unified-portal .sp-container {
+    width: calc(100% - 32px);
+  }
+  .unified-portal .sp-brand-inner {
+    padding-bottom: 14px;
+  }
+  .unified-portal .sp-student-label {
+    width: auto;
+    padding: 9px 12px;
+    margin-bottom: 0;
+  }
+  .unified-portal .sp-welcome {
+    margin-top: 18px;
+    padding: 25px 22px;
+    min-height: 185px;
+    gap: 12px;
+  }
+  .unified-portal .sp-welcome strong {
+    font-size: 26px;
+  }
+  .unified-portal .sp-welcome p {
+    font-size: 12px;
+  }
+  .workspace-section-heading {
+    margin: 27px 0 18px;
+    display: block;
+  }
+  .workspace-section-heading h2 {
+    font-size: 23px;
+  }
+  .workspace-section-heading > p {
+    margin-top: 10px;
+  }
+  .unified-portal .sp-tile-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .unified-portal .sp-tile-grid .sp-tile {
+    padding: 17px;
+    min-height: 143px;
+    font-size: 11px;
+  }
+  .unified-portal .sp-sidebar {
+    display: flex;
+    border-top: 0;
+    padding-top: 0;
+  }
+  .unified-portal .sp-footer {
+    padding: 24px 16px;
+  }
+  .unified-portal .sp-updates {
+    padding: 19px;
+  }
+  .unified-portal .sp-brand-inner {
+    gap: 0;
+  }
+  .unified-portal .sp-identity {
+    padding: 17px 0;
+  }
+}

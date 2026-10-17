@@ -1,0 +1,149 @@
+.priority-brief {
+  margin: 24px 0;
+  padding: 25px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 12px;
+  animation: campus-reveal 0.45s ease both;
+}
+.priority-brief header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+.priority-brief header span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: var(--primary);
+}
+.priority-brief h2 {
+  font-size: 22px;
+  margin-top: 9px;
+  font-weight: 650;
+  letter-spacing: -0.6px;
+}
+.priority-brief header > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 12px;
+}
+.priority-brief > p {
+  color: var(--muted);
+  font-size: 11px;
+  margin: 10px 0 20px;
+}
+.priority-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+.priority-items > a,
+.priority-items > div {
+  padding: 18px;
+  border-radius: 8px;
+  background: var(--soft);
+  transition: transform 0.2s;
+}
+.priority-items > a:hover {
+  transform: translateY(-3px);
+}
+.priority-items strong {
+  font-size: 13px;
+}
+.priority-items p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 7px 0 12px;
+}
+.priority-items span,
+.priority-items > div > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--primary);
+}
+.context-assistant {
+  display: flex;
+  justify-content: flex-end;
+  margin: 18px 0 0;
+}
+.context-assistant a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  background: var(--soft);
+  color: var(--primary);
+  padding: 11px 16px;
+  border-radius: 8px;
+}
+.workspace-content > .page-heading,
+.workspace-content > .panel,
+.workspace-content > .table-wrap,
+.chat-message {
+  animation: campus-reveal 0.35s ease both;
+}
+.chat-messages {
+  scroll-behavior: smooth;
+}
+.chat-message p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+@keyframes campus-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 650px) {
+  .priority-brief {
+    padding: 18px;
+  }
+  .priority-brief header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .priority-brief h2 {
+    font-size: 20px;
+  }
+  .priority-items {
+    grid-template-columns: 1fr;
+  }
+  .context-assistant {
+    justify-content: stretch;
+  }
+  .context-assistant a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .priority-brief,
+  .chat-message,
+  .workspace-content > .page-heading,
+  .workspace-content > .panel,
+  .workspace-content > .table-wrap {
+    animation: none !important;
+  }
+  .priority-items > a {
+    transition: none !important;
+  }
+  .chat-messages {
+    scroll-behavior: auto;
+  }
+}
+html .chat-message.user p{color:#fff}html .chat-message.user b{color:#bde5ed}html .chat-message.assistant b{color:var(--primary)}html .chat-input{border-color:var(--border)}

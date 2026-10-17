@@ -1,0 +1,6 @@
+node_modules
+dist
+package-lock.json
+artifacts
+supabase/migrations
+src/types/database.ts
